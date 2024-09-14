@@ -1,0 +1,74 @@
+CC: laurence.jacobs@coe.gatech.edu
+
+Manuscript Number: NDTEINT-D-24-00397 
+
+Enabling Near-Array Ultrasonic Imaging with an Apex-Shifted Radon Transform 
+
+Dear Prof. He,  
+
+Thank you for submitting your manuscript to NDT and E International. 
+
+I have completed my evaluation of your manuscript. The reviewers recommend reconsideration of your manuscript following revision and modification. I invite you to resubmit your manuscript after addressing the comments below. Please resubmit your revised manuscript by Aug 26, 2024. 
+
+When revising your manuscript, please consider all issues mentioned in the reviewers' comments carefully: please outline every change made in response to their comments and provide suitable rebuttals for any comments not addressed. Please note that your revised submission will be subject to further review.
+
+To submit your revised manuscript, please log in as an author at https://www.editorialmanager.com/ndteint/, and navigate to the "Submissions Needing Revision" folder under the Author Main Menu.  
+
+Research Elements (optional)
+This journal encourages you to share research objects - including your raw data, methods, protocols, software, hardware and more – which support your original research article in a Research Elements journal. Research Elements are open access, multidisciplinary, peer-reviewed journals which make the objects associated with your research more discoverable, trustworthy and promote replicability and reproducibility. As open access journals, there may be an Article Publishing Charge if your paper is accepted for publication. Find out more about the Research Elements journals at https://www.elsevier.com/authors/tools-and-resources/research-elements-journals?dgcid=ec_em_research_elements_email.
+
+
+NDT and E International values your contribution and I look forward to receiving your revised manuscript. 
+
+Kind regards,  
+
+Laurence Jacobs 
+
+Subject Editor 
+
+NDT and E International 
+
+Editor and Reviewer comments:  
+
+Reviewer #1: Comments are provided in the attached pdf.
+
+
+This paper presents a signal processing technique called the Apex-shifted Radon transform
+(ASRT) and demonstrates its capability to mitigate dead zone artefacts in ultrasonic NDT data.
+The paper is generally well presented and demonstrates a useful pre-processing technique.
+However, some minor corrections, as follows, must be made prior to publication:
+• The author’s previous work (Loshelder et al., 2023) presents an ASRT based direct arrival
+suppression technique which is extremely similar to the one presented here. The current
+paper extends the application to TFM (as appose to the originally considered SHM data),
+but the previous work must be clearly cited and the novelties of this paper made clear.
+• Section two should be split into two subsections (one for FMC / TFM and another for
+ASRT) for ease of reading.
+• From the description currently provided, in the left half of figure 2, I would expect apex
+location (row 3) to translate the curve horizontally. Instead of translating, it appears to
+change in curvature instead. If this is an error, it needs amending. Additionally, some
+plain English description of the effect of τ, q and y on a hyperbola to accompany this
+figure would aid reader’s understanding.
+• The solid line hyperbola confuses Figure 2. I assume this represents the reference apex
+y0 but this needs to be made clear or the curve removed.
+• It is stated that thresholding the amplitude of the direct arrivals prior to applying the
+proposed ASRT domain filtering. It is not immediately clear why the thresholding step is
+needed. A descriptive or pictorial example of what happens if this thresholding is not
+done would clarify this.
+• TFM images would be better displayed in dB. Especially in Figures 6c/e and 7c/e.
+• It is stated that ASRT originates from geophysics. References and description of its use
+should be provided.
+• The pitch of the 32-element array used should be stated at the start of section 4.
+• Details of the simulation method/software and array parameters used to create the data
+used in section 3 should be provided.
+Loshelder, A. E., He, J., Aktharuzzaman, M., Harb, M. S., & Rao, J. (2023). Apex-shifted Radon
+transform for baseline-subtraction-free (BSF) damage scattered wave extraction.
+Structural Health Monitoring, 22(6), 3604–3622.
+
+
+Reviewer #2: This study is very interesting by introducing the ASRT with TFM to overcome the "dead zone" challenge caused by the direct arrivals wave. However, some suggestions and questions should be considered.
+1.In the manuscript, the author mentioned "near array" or "near surface" several times. Although the scattering target is the depth of 1~7 wavelengths, the actual depth is more than 10 mm due to low center frequency. This raises the question of whether such a depth can still be classified as "near surface."
+2.The use of a 0.5 MHz excitation frequency is infrequently encountered in the domain of metal inspection. It is advisable to consider a more prevalent frequency, such as 5 MHz, for both practical applications and numerical simulations.
+3.Please provide a detailed list of the parameters for the numerical simulation, including the geometric dimensions of the inclusions and the pitch of the array.
+4.Please provide the reference of equation (1).
+5.Please explain the green dotted line in Figure 2 and the notation n in equation (1).
+  
