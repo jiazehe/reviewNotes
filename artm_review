@@ -1,0 +1,78 @@
+CC: laurence.jacobs@coe.gatech.edu
+
+Manuscript Number: NDTEINT-D-24-00394 
+
+Defect Imaging via Adjoint-state based Reverse Time Migration 
+
+Dear Prof. He,  
+
+Thank you for submitting your manuscript to NDT and E International. 
+
+I have completed my evaluation of your manuscript. The reviewers recommend reconsideration of your manuscript following  major revision and modification. I invite you to resubmit your manuscript after addressing the comments below. Please resubmit your revised manuscript by Aug 06, 2024. 
+
+When revising your manuscript, please consider all issues mentioned in the reviewers' comments carefully: please outline every change made in response to their comments and provide suitable rebuttals for any comments not addressed. Please note that your revised submission will be subject to further review.
+
+To submit your revised manuscript, please log in as an author at https://www.editorialmanager.com/ndteint/, and navigate to the "Submissions Needing Revision" folder under the Author Main Menu.  
+
+Research Elements (optional)
+This journal encourages you to share research objects - including your raw data, methods, protocols, software, hardware and more – which support your original research article in a Research Elements journal. Research Elements are open access, multidisciplinary, peer-reviewed journals which make the objects associated with your research more discoverable, trustworthy and promote replicability and reproducibility. As open access journals, there may be an Article Publishing Charge if your paper is accepted for publication. Find out more about the Research Elements journals at https://www.elsevier.com/authors/tools-and-resources/research-elements-journals?dgcid=ec_em_research_elements_email.
+
+
+NDT and E International values your contribution and I look forward to receiving your revised manuscript. 
+
+Kind regards,  
+
+Laurence Jacobs 
+
+Subject Editor 
+
+NDT and E International 
+
+Editor and Reviewer comments:  
+
+
+
+
+
+Reviewer #1: The manuscript describes an attempt to translate an imaging algorithm (ARTM) from geophysics to ultrasonic array data, with numerical and experimental examples for side-drilled holes in metal calibration blocks. In principle the topic is interesting and of relevance for the readership of the NDT&E International journal, but the manuscript is not at the required level for publication. A significantly revised version could be resubmitted to the journal, taking the points below into account.
+
+Previous application in geophysics and how this translates to ultrasonic testing need to be described better, explaining the underlying physics, meaning, and methodology, rather than just equations and getting lost in 'jargon'. The evaluated measurement data was not acquired by the authors but provided by a company. Why this in itself is okay, the specimen as well as the measurement details and limitations need to be explained accurately. There is a complete lack of quantification and analysis of the achieved defect imaging results, e.g., accuracy of localization of side-drilled holes and comparison to TFM algorithm.
+
+- No highlights, graphical abstract
+- Abstract repeats concept, no quantification of results or improvement
+- What type of defect and wavelength/size ratio?
+- Abstract states metals, why delamination in literature review?
+- A significant aspect of the manuscript is the translation of the ARTM method previously used in geophysics for NDT applications. The literature review does not really provide a good overview and description of this. Part of section 2.3 should be moved earlier, with an in-depth discussion of previous applications, material and wave propagation assumptions and challenges, and how this translates to NDT applications.
+- Improved explanation of the underlying physics of the ARTM methodology and how this improves imaging has to be provided.
+- Section 2 should be clear about the required assumptions (isotropic, homogeneous?) and accuracy of advance knowledge of the material properties. The section relies only on the provision of equations, but should explain the underlying physics and how they affect the methodology.
+- Figure 1: too lengthy legend, both sentences starting with 'This domain …' should be removed.
+- Table 1 needs to show all relevant dimensions of the test specimens, this should be available.
+- Table 2 should be combined with data provided in legend and only relevant information shown. I would have expected hole depth for imaging, not convinced provided information all relevant. Were holes not drilled to more rounded sizes, e.g., 2.6mm instead of 2.58mm?
+- One significant limitation is that the measurements were not conducted by the authors themselves, but provided by a company. Important and relevant information about the specimens and measurements (e.g., couplant?) needs to be provided, along with an assessment of the repeatability and required positioning of the ultrasonic array.
+- Figure 2 c/d: very difficult to see, use color and colorbar.
+- This holds true for all results figures (4, 5, 6), please adjust.
+- Section 3.2: please provide at least brief description of solver, discussion of kernels not clear.
+- Section 3.3: some repeat, remove. Please specify time step here, source and receiver spacing, Ricker wavelet. Not clear why total simulation time not matched to experiment and data down sampled.
+- Section 3.6: not clear what is meant by 'unknown orientation for individual holes', hole position?
+- What is missing throughout the manuscript is a clear description of methodology in terms of underlying signal processing and methodology, e.g., adjoint source shown in figure 3 effectively baseline subtraction. How effected by material properties not well explained.
+- Description of sensitivity kernels not clear, improve explanation.
+- There is a lack of quantification of the results, e.g., figure 4 would expect very good accuracy for numerical data, but agreement (or difference) with known hole locations not stated.
+- This also holds true for experimental results. Quantification of accuracy and comparison to TFM not provided. Figure 6 TFM results appear better than four shown kernels. It should be explained why performance worse.
+- Conclusions very brief, not providing clear analysis of methodology improvement.
+- Please check references for consistency and completeness.
+
+
+
+Reviewer #2: This manuscript studies ultrasonic testing and ways to increase the accuracy of defects detection in different environments. Reverse-Time Migration (RTM) was applied on steel and aluminum specimens, and the results compared with Total Focusing Method.
+
+1. The authors used too many abbreviations, making the text difficult to read. I suggest reducing abbreviations to only the necessary ones. It is not common to use abbreviations in the abstract.
+2. The authors compared ARTM with TFM. Why not considering other most well-known approaches like Synthetic Aperture Focusing Technique (SAFT)? The authors must explain why they did not consider SAFT, and what are the advantages of ARTM compared to SAFT.
+3. Section 2.3 - it seems the term "Adjoint tomography theory (ATT)" has been defined in the past
+4. Page 6: Why did the authors use caption for tables. Tables must have title that is going top of the Table. Second of all, the authors claimed that their measurements precision was ±0.1. If so, why they reported the size of holes with more significant figures in Table 2?
+5. Change the background of ultrasonic imaging to white! This applies to Fig 2 - 6.
+6. The authors kept using subsection, or subsubsection, etc. If it is not necessary, remove the word "subsection, subsubsection, …"
+7. Section 3.3, the authors must explain why they advised for mesh coarseness greater than 5.5. Is this wave properties such as frequency, wavelength, etc. convincing them to suggest this.
+8. Section 3.3, if the abbreviation STF was not defined, the authors must carefully define the term!
+9. There seems no description about Fig 2c and Fig 2d and Fig 3c. In contrast, Fig 3b. was described, but there is no conclusion drawn for this figure. It is not clear what authors wanted to get from this figure!
+  
+
