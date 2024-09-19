@@ -1,0 +1,73 @@
+Ref: MSSP24-1139
+Title: A Deep Learning-Based Approach to Improve Reconstruction of Full Waveform Inversion-Based Ultrasound Tomography
+Authors: Shoaib Anwar; Austin Yunker; Rajkumar Kettimuthu; Mark Anastasio; Zhengchun Liu; Jiaze He
+Article Type: Standard Research Article
+
+Dear Dr. He,
+
+Your manuscript has now been reviewed and the reviewers' comments are appended below for your attention. I have also evaluated your paper and concur with the reviewers' comments. I am afraid that I cannot recommend your paper for publication in Mechanical Systems and Signal Processing, and in the light of the reviewers' comments, am unable to give your current submission further consideration.
+
+I realise that this decision will be very disappointing for you, however I hope that you find the reviewers' comments attached constructive for further refinement of your work.
+
+Finally may I thank you on behalf of the journal for giving us the chance to assess this paper.
+
+
+Yours sincerely,
+Mechanical Systems and Signal Processing
+Email: mssp@elsevier.com
+MSSP Online: http://www.elsevier.com/locate/ymssp
+Editorial Manager: https://www.editorialmanager.com/ymssp/
+http://www.sciencedirect.com/science/journal/08883270
+
+==========================================
+
+
+
+
+
+Reviewer #1: The manuscript describes an FWI implementation on ultrasound data assisted by machine learning. The paper is generally well written and the organization is good. However, I have some major concerns that I hope the authors would address.
+
+I know it is mentioned, but the reader might get confused. What is the Unet trained to do? What are the labels? And what are the inputs to the network? Are the inputs smooth versions of the set of velocity models they built? Why not add to Figure 7 sample images of input and output on the sides. The authors should add clarifications on the matter. Also, where are the training loss plots for training and validation data, as such information provides the reader with insights into the training.
+
+I am missing the context, for example what does the velocity model perturbation represent in practical terms. In other words, Figures like 9, 10, and others correspond to what media example and what experiment. Is this NDT? Are we looking at fractures or cracks? Or medical anomalies?
+
+In out of distribution test, I noticed that the kind of perturbations, though scale different, is similar to the training data. They are mainly centered in the middle and have similar size. What happens if the perturbation is very small, like one small square?
+
+The conclusion is long, mainly because it includes a lot of specifics. Conclusions are often a single long paragraph that summaries main results and findings. No need for numbers as the numbers for many do not mean a lot. What matters is what do these numbers suggest.
+
+I include additional comments and suggestions (including the mentioned ones in more details) in the annotated version of the paper. I encourage the authors to address them and make the necessary revision.
+
+
+
+Reviewer #2: This paper uses deep learning approaches to speed up the reconstruction of ultrasound tomography using full waveform inversion.
+
+My first issue is about applicability. The authors fairly generally refer to applications in NDT, SHM and medical imaging and give little detail of specific cases. This is important because machine learning is inherently dependent on the type of data it is reconstructing. It also reflects the value that FWI brings in the first place: within NDT/SHM, there have been no demonstrated examples where FWI velocity mapping gives any benefit over existing methods, but has the big downside of the huge computational resource.
+
+Human tissue behaves in a very different way to NDT/SHM applications with very different maps to be reconstructed and different ultrasound wave physics. There may be more merit in FWI for these applications, but the examples presented through the paper of arbitrary sized orthogonal blocks are in no way representative of this, and not representative of any NDT examples either.
+
+All data is simulated throughout. I couldn't see a specific section on how the data is generated, which would be needed, but also it concerns me that the same model is used both for generating test data and as the forward model in the inversion (i.e. the so-called "inverse crime"). There is nothing to demonstrate that this would work in the real world.
+
+Overall I cannot see significant value in the method for the application areas mentioned, and what is demonstrated in this paper does little to convince me of its merits. Finally I have seen quite a lot of papers talking about ML/AI for accelerating FWI already, so I'm not sure that another paper on the same idea is particularly needed.
+
+ 
+
+ 
+
+Associate Editor: Antonino Morassi
+
+
+===========================================
+
+If comments are provided in an additional file, this is available for download through the links for your paper in your submission system homepage. If the attachment is not available, please contact the Journal Office mssp@elsevier.com and they will arrange to send it to you via email.
+
+*******************************************
+
+For further assistance, please visit our customer support site at http://help.elsevier.com/app/answers/list/p/7923. Here you can search for solutions on a range of topics, find answers to frequently asked questions and learn more about EM via interactive tutorials. You will also find our 24/7 support contact details should you need any further assistance from one of our customer support representatives.
+
+At Elsevier, we want to help all our authors to stay safe when publishing. Please be aware of fraudulent messages requesting money in return for the publication of your paper. If you are publishing open access with Elsevier, bear in mind that we will never request payment before the paper has been accepted. We have prepared some guidelines (https://www.elsevier.com/connect/authors-update/seven-top-tips-on-stopping-apc-scams ) that you may find helpful, including a short video on Identifying fake acceptance letters (https://www.youtube.com/watch?v=o5l8thD9XtE ). Please remember that you can contact Elsevier s Researcher Support team (https://service.elsevier.com/app/home/supporthub/publishing/) at any time if you have questions about your manuscript, and you can log into Editorial Manager to check the status of your manuscript (https://service.elsevier.com/app/answers/detail/a_id/29155/c/10530/supporthub/publishing/kw/status/).
+
+#AU_YMSSP#
+
+To ensure this email reaches the intended recipient, please do not delete the above code
+
+ 
