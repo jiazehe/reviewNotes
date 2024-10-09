@@ -25,6 +25,45 @@ J Zhu, Z Su, Q Wang, Y Yu, J Wen… - … Materials and Structures, 2023 - iopsc
 Save Cite Cited by 1 Related articles All 4 versions
 
 
+I will help with 
+1) abstract re-written 
+2) explain the dataset 
+3) conclusion enhancement  
+
+Changes so far: 
+
+\begin{abstract}
+
+%% Text of abstract
+
+Enabled by multiple modalities of smart materials-based actuation and sensing, full waveform inversion (FWI) nowadays frequently serves as an advanced ultrasound computed tomography technique that utilizes waveform data to generate high-resolution images of scanned regions. 
+This technology offers promise for defect/damage detection and disease diagnosis, showing potential in nondestructive testing, structural health monitoring, and medical imaging. 
+To reduce the lengthy computational time caused by time-domain FWI, modern AI-driven and data-driven approaches have been studied to accelerate the reconstruction process in recent years. 
+However, most of the existing research has focused on tuning specific neural networks for fixed-domain applications, leaving the relationship between model performance and characteristics of various training datasets underexplored.
+This paper presents a comprehensive investigation into the improvements achievable with integration of deep learning with the adjoint tomography theory, addressing the scientific questions of how amounts/distributions of the training data, augmentation, and loss functions influences the efficacy of this approach.
+The selected integration strategy involves training a U-Net neural network model using pairs of low-resolution inverted images and their corresponding high-resolution ground truth images. 
+Once trained, the U-Net model instantaneously converts low-resolution inference images to high-resolution reconstructions. 
+Generated using a proposed high-performance computing-based framework, multiple datasets were designed to offer a general representation of various applications while maintaining the shared characteristics across different use cases.
+The study also incorporates augmentation strategies to expand the size and complexity of the training dataset without significantly increasing the number of samples.
+Furthermore, a hyperparameter tuning framework was introduced to investigate the impact of multiple loss functions on the model performance.
+\jhe{2M} An additional challenge in data-driven approaches is the generalizability of the neural network model when exposed to out-of-distribution data.
+This study rigorously tests the model's generalizability against several out-of-distribution datasets and finds that the U-Net model maintains a degree of generalizability when trained with unscaled datasets. 
+
+\section{Implementations, Data, and Model}\label{sec:data}
+
+\subsection{Motive of the dataset building}
+ 
+This paper focuses on the improvements achievable with integration of deep learning with the adjoint tomography theory, addressing the scientific questions of how amounts/distributions of the training data, augmentation, and loss functions influences the efficacy of this approach. Prior to the application of this technique to real-world data, it is imperative to establish a fundamental understanding of the concept of combining DL methodology and FWI-USCT, while concurrently setting a benchmark for the approach's efficacy. 
+As a pivotal preliminary step, this study concentrates on a water-immersed scanning setup with embedded, unknown material distributions with rectangular, possibly overlapped shapes. The design of the datasets aims to preserve the dominate challenges of nonlinear characteristics of the inverse problems that ultrasonic FWI faces while shows a certain level of relevance to two specific applications: 1) material properties reconstruction in NDT \cite{he2021numerical} to identify with inclusions  or foreign object debris and 2) tissue stiffness reconstruction for medical USCT to evaluate tumors \cite{li20213}, where realistic, complex-shaped targets have been successfully reconstructed using traditional time-domain FWI.  
+Because this research focus on building the relationship between the aforementioned characteristics of data/model and the efficacy of the AI-empowered approach, random material disturbance from the background material (i.e., water) was selected to enable the full control of the dataset distribution for probing the inherent FWI-related physics. 
+On the other hand, our other ongoing work involves exploring the specific application for medical breast USCT using a much more realistic, clinical extracted dataset with experimental USCT scanning. However, this medical dataset, while more realistic, does not have the traits that this FWI-centralized paper requires, including unlimited control of the amount/distributions and minimized bias in FWI reconstructions caused by application-specific preferences. 
+
+
+
+
+
+
+
 
 
 Ref: MSSP24-1139
