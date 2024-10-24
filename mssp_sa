@@ -60,6 +60,17 @@ On the other hand, our other ongoing work involves exploring the specific applic
 
 
 
+\section{Conclusion}
+
+To address the challenges on computational costs and extended processing times of time-domain full waveform inversion (TDFWI), this paper performed fundamental research on the improvements achievable with integration of deep learning with the adjoint tomography theory.  In this study, we developed numerical models for FWI simulation and used the Structural Similarity Index Measure (SSIM) to evaluate the inverted images against ground truth models. To accelerate the data generation process, an HPC-based framework has been built with detailed description. Without the integration of deep learning, classical FWI achieved an SSIM of approximately 22\% after 120 iterations, revealing the need for improvement in structural reconstruction accuracy.  
+
+A 2D convolutional neural network (CNN) based on the U-Net architecture was selected to explore the scientific questions on how amounts/distributions of the training data, augmentation, and loss functions influences the efficacy of this approach. 
+1) When using a small dataset comprising 1st-iteration TDFWI images (700 training and 300 validation samples)  , our model achieved a 91\% similarity index. By augmenting this dataset, the SSIM increased to 92-94\%, with notable improvements in boundary delineation between different wave speed distributions. However, artifacts persisted, highlighting the need for more extensive training data.
+2) When using a small dataset comprising 10th-iteration TDFWI images (700 training and 300 validation samples) with more embedded material information, the model achieved an impressive SSIM score of 99\%.
+Notably, in this scenario, augmentations didn't confer additional benefits, reinforcing the notion that higher iteration data inherently contained ample information for precise predictions.
+3) When using a large dataset contain 1st-iteration TDFWI images (20,000 training and 3,000 validation samples), a surprising observation is that lower iteration data can achieve near-perfect predictions when provided in large quantities. 
+
+The above conclusions are with in-distribution data. The generalizability studies indicated that the model could successfully reconstruct wave speed maps even for samples out of the wave speed ranges in the original dataset. However, anomalies and artifacts were present, suggesting that further research is needed to enhance the model's robustness in handling unseen data, especially for those with different shapes and sizes.
 
 
 
